@@ -1,0 +1,104 @@
+/* Fuentes personalizadas */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
+
+/* Variables de colores */
+:root {
+    --primary-color: #222831; /* Gris oscuro */
+    --secondary-color: #393e46; /* Gris medio */
+    --highlight-color: #00adb5; /* Azul verdoso */
+    --accent-color: #eeeeee; /* Gris claro */
+}
+
+/* Estilos globales */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    line-height: 1.6;
+}
+
+/* Cabecera */
+header {
+    background: var(--primary-color);
+    color: var(--accent-color);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin: 0;
+}
+
+header nav {
+    margin-top: 1rem;
+}
+
+header nav a {
+    color: var(--highlight-color);
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: var(--accent-color);
+}
+
+/* Footer */
+footer {
+    background: var(--secondary-color);
+    color: var(--accent-color);
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+}
+
+/* Tarjetas */
+.card {
+    background: var(--accent-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--highlight-color);
+}
+
+.card p {
+    margin: 0.5rem 0;
+    color: var(--secondary-color);
+}
+
+/* Botón */
+.button {
+    background: var(--highlight-color);
+    color: var(--accent-color);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background: var(--primary-color);
+    color: var(--accent-color);
+}
