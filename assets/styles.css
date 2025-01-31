@@ -154,7 +154,7 @@ footer {
 }
 
 .hero {
-    background: url('/images/ima.jpg.jpg') no-repeat center center/cover;
+    background: url('../ima.jpg.jpg') no-repeat center center/cover;
     height: 300px;
     display: flex;
     justify-content: center;
