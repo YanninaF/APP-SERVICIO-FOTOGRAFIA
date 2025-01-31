@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspiración Fotográfica</title>
+</head>
+<body>
+    <header>
+        <h1>Inspiración Fotográfica</h1>
+    </header>
+    <main style="text-align: center; padding: 2rem;">
+        <h2>Frase del Día</h2>
+        <p id="frase"></p>
+        <button class="button" onclick="mostrarFrase()">Generar Inspiración</button>
+    </main>
+    <footer>
+        <p>&copy; 2025 Fotógrafos en Asunción</p>
+    </footer>
+    <script>
+        const frases = [
+            "Una fotografía es el botón de pausa de la vida.",
+            "Captura momentos, no cosas.",
+            "La fotografía es el arte de congelar el tiempo."
+        ];
+
+        function mostrarFrase() {
+            const random = Math.floor(Math.random() * frases.length);
+            document.getElementById('frase').innerText = frases[random];
+        }
+    </script>
+</body>
+</html>
